@@ -104,7 +104,7 @@
         <a href="#">Premium</a>
         <a href="servicios.html">Servicios</a> 
         <a href="#">Cuenta</a>
-        <a href="eventos.html">Eventos</a> <!-- Enlace a eventos -->
+        <a href="eventos/index.html">Eventos</a> <!-- Enlace a eventos corregido -->
     </nav>
 </header>
 
@@ -127,7 +127,7 @@
 
     <section>
         <h2>EVENTOS 🎹</h2>
-        <a href="eventos.html">
+        <a href="eventos/index.html"> <!-- Enlace a eventos corregido -->
             <img src="imagenes/IMAGEN-ARTESANO.jpg" alt="EVENTOS" style="max-width: 300px; height: 200px;" />
         </a>
         <p>DISFRUTA DE LOS MEJORES EVENTOS DE ICA QUE SE VIENEN</p>
@@ -140,3 +140,4 @@
 
 </body>
 </html>
+
