@@ -1,4 +1,4 @@
-<!DOCTYPE html>  
+<!DOCTYPE html>
 <html lang="es">
 <head>
     <meta charset="UTF-8">
@@ -93,6 +93,16 @@
             bottom: 0;
             width: 100%;
         }
+        /* Estilo para el contenedor de imágenes deslizables */
+        .scroll-container {
+            display: flex;
+            overflow-x: auto;
+            padding: 10px 0;
+            scroll-snap-type: x mandatory; /* Habilitar el efecto de "snap" */
+        }
+        .scroll-container img {
+            scroll-snap-align: start; /* Alineación de las imágenes en el contenedor */
+        }
     </style>
 </head>
 <body>
@@ -117,12 +127,12 @@
 
     <section>
         <h2>BANDAS EMERGENTES 🎸</h2>
-        <div style="display: flex; align-items: center;">
+        <div class="scroll-container">
             <img src="imagenes/IMAGEN-ADSEX.jpg" alt="ADSEX" style="max-width: 300px; height: 200px;" />
             <div class="tooltip">Una banda juvenil Iqueña que tiene un proyecto claro en mente, hacer que el rock y pop de los 80s vuelvan a la actualidad. Consta de 7 integrantes.</div>
             <img src="imagenes/IMAGEN-THEENYGMAS.jpg" alt="THEENYGMAS" style="max-width: 300px; height: 200px;" />
-            <a href="bandas-emergentes.html" class="mostrar-mas">Mostrar más 🎸</a>
         </div>
+        <a href="bandas-emergentes.html" class="mostrar-mas">Mostrar más 🎸</a>
     </section>
 
     <section>
@@ -140,4 +150,3 @@
 
 </body>
 </html>
-
