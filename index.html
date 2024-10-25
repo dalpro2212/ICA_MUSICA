@@ -93,16 +93,6 @@
             bottom: 0;
             width: 100%;
         }
-        /* Estilo para el contenedor de imágenes deslizables */
-        .scroll-container {
-            display: flex;
-            overflow-x: auto;
-            padding: 10px 0;
-            scroll-snap-type: x mandatory; /* Habilitar el efecto de "snap" */
-        }
-        .scroll-container img {
-            scroll-snap-align: start; /* Alineación de las imágenes en el contenedor */
-        }
     </style>
 </head>
 <body>
@@ -121,18 +111,23 @@
 <div class="container">
     <section>
         <h2>BANDAS</h2>
+        <div style="display: flex; align-items: center; overflow-x: auto;">
         <img src="imagenes/IMAGEN-DPOS.jpg" alt="DPOS" style="max-width: 300px; height: 200px;" />
         <div class="tooltip">DPOS es una banda del 2021 que empezó con el pie derecho.</div>
+        <img src="imagenes/IMAGEN-DHARMA.jpg" alt="DHARMA" style="max-width: 300px; height: 200px;" />
+        </div>
     </section>
 
     <section>
         <h2>BANDAS EMERGENTES 🎸</h2>
-        <div class="scroll-container">
+        <div style="display: flex; align-items: center; overflow-x: auto;">
             <img src="imagenes/IMAGEN-ADSEX.jpg" alt="ADSEX" style="max-width: 300px; height: 200px;" />
             <div class="tooltip">Una banda juvenil Iqueña que tiene un proyecto claro en mente, hacer que el rock y pop de los 80s vuelvan a la actualidad. Consta de 7 integrantes.</div>
             <img src="imagenes/IMAGEN-THEENYGMAS.jpg" alt="THEENYGMAS" style="max-width: 300px; height: 200px;" />
+            
+            <!-- Enlace actualizado del botón "Mostrar más" -->
+            <a href="mostrarmas/index.html" class="mostrar-mas">Mostrar más 🎸</a>
         </div>
-        <a href="bandas-emergentes.html" class="mostrar-mas">Mostrar más 🎸</a>
     </section>
 
     <section>
