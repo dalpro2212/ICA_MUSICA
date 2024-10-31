@@ -125,18 +125,23 @@
             <div class="tooltip">Una banda juvenil Iqueña que tiene un proyecto claro en mente, hacer que el rock y pop de los 80s vuelvan a la actualidad. Consta de 7 integrantes.</div>
             <img src="imagenes/IMAGEN-THEENYGMAS.jpg" alt="THEENYGMAS" style="max-width: 300px; height: 200px;" />
             
-            <!-- Enlace actualizado del botón "Mostrar más" -->
             <a href="mostrarmas/index.html" class="mostrar-mas">Mostrar más 🎸</a>
         </div>
     </section>
 
     <section>
         <h2>EVENTOS 🎹</h2>
-        <a href="eventos/index.html"> <!-- Enlace a eventos corregido -->
-            <img src="imagenes/IMAGEN-ARTESANO.jpg" alt="EVENTOS" style="max-width: 300px; height: 200px;" />
-        </a>
+        <div style="display: flex; align-items: center; overflow-y: auto;">
+            <a href="eventos/index.html">
+                <img src="imagenes/IMAGEN-ARTESANO.jpg" alt="EVENTOS" style="max-width: 300px; height: 200px;" />
+            </a>
+            <a href="eventos/evento2/index.html">
+                <img src="imagenes/IMAGEN-MSP.png" alt="OTRO EVENTO" style="max-width: 300px; height: 200px; margin-left: 20px;" />
+            </a>
+        </div>
         <p>DISFRUTA DE LOS MEJORES EVENTOS DE ICA QUE SE VIENEN</p>
     </section>
+    
 </div>
 
 <footer>
