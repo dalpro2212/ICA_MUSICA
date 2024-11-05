@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Página Web Bonita</title>
+    <title>ESCENA IQUEÑA</title>
     <meta name="description" content="Página web de ejemplo con diseño atractivo utilizando HTML y CSS.">
     <style>
         body {
