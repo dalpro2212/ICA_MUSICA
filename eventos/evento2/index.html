@@ -14,7 +14,7 @@
             background-size: cover;
             background-position: center;
             background-repeat: no-repeat;
-            height: 320vh;
+            height: 350vh;
             position: relative;
         }
         .overlay {
@@ -76,22 +76,32 @@
         }
         .ticket-info {
             margin-top: 30px;
-            display: flex; /* Usar flexbox para alinear horizontalmente */
-            justify-content: space-between; /* Espacio entre elementos */
-            align-items: center; /* Alinear verticalmente */
+            display: flex; 
+            justify-content: space-between; 
+            align-items: center; 
         }
         .organizer {
             background: rgba(53, 66, 74, 0.8);
             padding: 15px;
             border-radius: 10px;
+            grid-template-columns: repeat(2, 1fr);
             box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
-            margin-left: 20px; /* Espacio a la izquierda */
-            flex-shrink: 0; /* Evita que se reduzca el tamaño */
+            margin-left: 20px;
+            flex-shrink: 0; 
         }
         .instagram {
             font-size: 1.2em;
             color: #b3ad7c;
             margin-top: 10px;
+        }
+        .aupician {
+            display: flex; 
+            align-items: center; 
+            gap: 20px; 
+            background: rgba(53, 66, 74, 0.8);
+            margin-top: 20px; 
+            padding: 15px;
+            border-radius: 10px;
         }
     </style>
 </head>
@@ -111,7 +121,9 @@
                 <li>BOHEMIC</li>
                 <li>MALA REPUTACION</li>
                 <li>ME QUEDE EN EL AYER</li>
-                <li>CLAVICULA EN MI CELAR</li>
+                <li>CLAVICULA EN MI SELAR</li>
+                <li>COMPONEEX</li>
+                <li>NEOSPACE</li>
             </ul>
 
             <h2>ARTISTAS INVITADOS:</h2>
@@ -140,8 +152,25 @@
             <div class="location-info">
                 <h2>LUGAR DEL EVENTO:</h2>
                 <p>El Rinconcito de Huacachina(Ref. A espaldas del GYM Olimpia).</p>
-                <p>RECUERDA ESTE SABADO 30 DE NOVIEMBRE A LAS 5:00PM</p>
+                <p>RECUERDA ESTE SABADO 30 DE NOVIEMBRE A LAS 5:00PM. </p>
+        </div>
+        <div class="aupician">
+            <h2>AUSPICIAN: </h2>
+            <p>FASHAS STORE</p>
+            <p>ANGELS GYM</p>
+            <p>HAPPY DENT</p>
+            <p>PANDA ANISHOP</p>
+        </div>
+
+        <div class="aupician">
+            <h2>EMPRENDIMIENTOS: </h2>
+            <p>FARMAFIA</p>
+            <p>CHOCLO CLOTHES</p>
+            <p>GABYLU</p>
+            <p>DARK SOULS</p>
+            <p>CHUPAME LA TEJA</p>
         </div>
     </div>
+        
 </body>
 </html>
