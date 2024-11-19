@@ -101,10 +101,9 @@
     <h1>EN MUSICA IQUEÑA</h1>
     <nav>
         <a href="#">Categorías</a>
-        <a href="#">Premium</a>
-        <a href="servicios.html">Servicios</a> 
-        <a href="#">Cuenta</a>
-        <a href="eventos/index.html">Eventos</a> <!-- Enlace a eventos corregido -->
+        <a href="comunidades/index.html">Comunidades</a>
+        <a href="https://www.instagram.com/daniolazaval2212/">Organizador</a>
+        <a href="eventos/evento2/index.html">Eventos</a> <!-- Enlace a eventos corregido -->
     </nav>
 </header>
 
@@ -139,9 +138,9 @@
                 <img src="imagenes/IMAGEN-MSP.png" alt="OTRO EVENTO" style="max-width: 300px; height: 200px; margin-left: 20px;" />
             </a>
         </div>
-        <p>DISFRUTA DE LOS MEJORES EVENTOS DE ICA QUE SE VIENEN</p>
+        <p>DISFRUTA DE LOS MEJORES EVENTOS DE ICA QUE SE VIENEN.</p>
+            
     </section>
-    
 </div>
 
 <footer>
