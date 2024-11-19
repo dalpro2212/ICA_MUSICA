@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>COMUNIDADES</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-image: url('../imagenes/IMAGEN-FONDOCOMUNIDADES.jpg');
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            height: 180vh;
+        }
+        header {
+            background: rgba(143, 158, 168, 0.678);
+            padding: 20px 0;
+            text-align: center;
+        }
+        header h1 {
+            font-size: 3em;
+            font-weight: bold;
+            color: #f8f8f4;
+            text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+            letter-spacing: 2px;
+            margin: 0;
+        }
+        .container {
+            width: 80%;
+            margin: auto;
+            overflow: hidden;
+        }
+        section h2 {
+            font-size: 2em;
+            color: #faf6f6;
+        }
+        .image-container {
+            display: flex;
+            align-items: center;
+            overflow-x: auto;
+            position: relative;
+            padding: 10px;
+            border-radius: 8px;
+            background-color: #f0f0f0; /* Fondo inicial */
+            transition: background-color 0.3s ease;
+        }
+        .image-container:hover {
+            background-color: #a0d1f0; /* Cambia de color al pasar el mouse */
+        }
+        img {
+            max-width: 300px;
+            height: 200px;
+            transition: transform 0.3s ease; /* Efecto de zoom */
+        }
+        img:hover {
+            transform: scale(1.2); /* Zoom al pasar el ratón */
+        }
+        .tooltip {
+            display: none;
+            position: absolute;
+            background: #35424a;
+            color: #ffffff;
+            padding: 10px;
+            border-radius: 5px;
+            z-index: 10;
+            left: 320px;
+            top: 50%;
+            transform: translateY(-50%);
+            white-space: nowrap;
+        }
+        .image-container:hover .tooltip {
+            display: block; /* Muestra el tooltip al pasar el ratón sobre la imagen */
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>COMUNIDADES</h1>
+    </header>
+
+    <div class="container">
+        <section>
+            <h2>DANS</h2>
+            <div class="image-container">
+                <a href="../eventos/index.html">
+                <img src="../imagenes/IMAGEN-DAN.jpg" alt="DANS" />
+                <a>
+                <div class="tooltip">DAN ES UNA COMUNIDAD DE LIMA/ICA.</div>
+            </div>
+        </section>
+    </div>
+    <div class="container">
+        <section>
+            <h2>DPOS ARMY</h2>
+            <div class="image-container">
+            <img src="../imagenes/IMAGEN-COMUNIDADDPOS.heic" alt="DPOS" style="max-width: 400px; height: 200px;" />
+        </section>
+    </div>
+    
+</body>
+</html>
