@@ -1,4 +1,4 @@
-DOCTYPE html>
+<!DOCTYPE html>
 <html lang="es">
 <head>
     <meta charset="UTF-8">
@@ -6,6 +6,7 @@ DOCTYPE html>
     <title>ESCENA IQUEÑA</title>
     <meta name="description" content="Página web de ejemplo con diseño atractivo utilizando HTML y CSS.">
     <style>
+ 
         body {
             font-family: Arial, sans-serif;
             margin: 0;
@@ -93,6 +94,45 @@ DOCTYPE html>
             bottom: 0;
             width: 100%;
         }
+
+        .qr-yape {
+  position: fixed;
+  bottom: 15px;
+  right: 15px;
+  text-align: center;
+  z-index: 1000;
+}
+
+.qr-yape img {
+  width: 100px;
+  height: auto;
+  cursor: pointer;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.4);
+}
+
+.qr-yape p {
+  color: white;
+  background: rgba(0,0,0,0.6);
+  padding: 5px 8px;
+  border-radius: 5px;
+  font-size: 0.8em;
+  margin-top: 5px;
+}
+
+@media screen and (max-width: 600px) {
+  .qr-yape img {
+    width: 70px;
+  }
+  .qr-yape p {
+    font-size: 0.7em;
+    padding: 4px;
+  }
+}
+html {
+      scroll-behavior: smooth;
+    }
+
     </style>
 </head>
 <body>
@@ -100,10 +140,12 @@ DOCTYPE html>
 <header>
     <h1>EN MI MUSICA IQUEÑA</h1>
     <nav>
-        <a href="#">Categorías</a>
+        <a href="#">Generos</a> 
         <a href="comunidades/index.html">Comunidades</a>
         <a href="https://www.instagram.com/daniolazaval2212/">Organizador</a>
-        <a href="eventos/evento2/index.html">Eventos</a> <!-- Enlace a eventos corregido -->
+        <div class="html">
+        <a href="#eventos">Eventos</a>
+        </div> 
     </nav>
 </header>
 
@@ -114,45 +156,55 @@ DOCTYPE html>
 
 <div class="container">
     <section>
-        <h2>BANDAS</h2>
+        <h2>𝐏𝐑𝐎𝐘𝐄𝐂𝐓𝐎𝐒 𝐌𝐔𝐒𝐈𝐂𝐀𝐋𝐄𝐒 </h2>
         <div style="display: flex; align-items: center; overflow-x: auto;">
+        <a href="https://www.instagram.com/dposoficial?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" target="_blank">
         <img src="imagenes/IMAGEN-DPOS.jpg" alt="DPOS" style="max-width: 300px; height: 200px;" />
         <div class="tooltip">DPOS es una banda del 2021 que empezó con el pie derecho.</div>
-        <img src="imagenes/IMAGEN-RASTROPERDIDO.jpg" alt="RASTRO" style="max-width: 300px; height: 200px;" />
+        </a>
+        <a href="https://www.instagram.com/the_enygmas?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" target="_blank">
+        <img src="imagenes/IMAGEN-THEENYGMAS.jpg" alt="RASTRO" style="max-width: 300px; height: 200px;" />
+        </a>
+        <a href="https://www.instagram.com/shi_funk?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw=="target="blank">
+        <img src="imagenes/SHI-FUNK.jpg" alt="RASTRO" style="max-width: 300px; height: 200px;" />
+        </a>
+
     </div>
     </section>
 
     <section>
-        <h2>BANDAS EMERGENTES 🎸</h2>
+        <h2>𝐁𝐀𝐍𝐃𝐀𝐒 𝐄𝐌𝐄𝐑𝐆𝐄𝐍𝐓𝐄𝐒 🎸</h2>
         <div style="display: flex; align-items: center; overflow-x: auto;">
+            <a href="https://www.instagram.com/shi_funk?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw=="target="blank">
             <img src="imagenes/SHI-FUNK.jpg" alt="SHI-FUNK" style="max-width: 300px; height: 200px;" />
-            <div class="tooltip">Una banda juvenil Iqueña que t</div>
+            <div class="tooltip">Una banda juvenil Iqueña </div>
+            </a>
+            <a href="https://www.instagram.com/the_enygmas?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" target="_blank">
             <img src="imagenes/IMAGEN-THEENYGMAS.jpg" alt="THEENYGMAS" style="max-width: 300px; height: 200px;" />
+            </a>
+            <a href="https://www.instagram.com/donna.angelicataa?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" target="_blank">
             <img src="imagenes/DONNA-ANGELICATTA.jpg" alt="DONNA-ANGELICATTA" style="max-width: 300px; height: 200px;" />
+            </a>
             
             <a href="mostrarmas/index.html" class="mostrar-mas">Mostrar más 🎸</a>
         </div>
     </section>
 
-    <section>
-        <h2>EVENTOS 🎹</h2>
+    <section id="eventos">
+        <h2>𝐄𝐕𝐄𝐍𝐓𝐎𝐒 🎹</h2>
         <div style="display: flex; align-items: center; overflow-y: auto;">
             <a href="eventos/index.html">
                 <img src="imagenes/ARTESANO-LOGO.jpg" alt="EVENTOS" style="max-width: 300px; height: 200px;" />
-            </a>
-            <a href="eventos/evento2/index.html">
-                <img src="imagenes/IMAGEN-MSP.png" alt="OTRO EVENTO" style="max-width: 300px; height: 200px; margin-left: 20px;" />
-            </a>
-            
             <a href="https://www.instagram.com/rockicalle?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" target="_blank">
   <img src="imagenes/ROCK-CALLE.jpg" alt="ROCK CALLE" 
        style="max-width: 290px; height: 200px; margin-left: 20px;" />
 </a>
-
+<section>
         </div>
-
-<img src="imagenes/QR-YAPE.jpg" alt="QR de Yape" 
-     style="position: fixed; bottom: 20px; right: 20px; width: 120px; height: auto; z-index: 1000;">
+<div class="qr-yape">
+  <img src="imagenes/QR-YAPE.jpg" alt="QR de Yape">
+  <p>Escanea para yapear 🙌</p>
+</div>
 
 
         <p>DISFRUTA DE LOS MEJORES EVENTOS DE ICA QUE SE VIENEN.</p>
@@ -166,3 +218,5 @@ DOCTYPE html>
 
 </body>
 </html>
+
+
