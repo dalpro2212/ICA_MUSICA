@@ -1,223 +1,119 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ESCENA IQUEÑA</title>
-    <meta name="description" content="Página web de ejemplo con diseño atractivo utilizando HTML y CSS.">
-    <style>
- 
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-            background-image: url('imagenes/IMAGEN-FONDO.jpg'); 
-            background-size: cover;
-            background-position: center;
-            background-repeat: no-repeat;
-        }
-        header {
-            background: rgba(53, 66, 74, 0.8);
-            padding: 20px 0;
-            text-align: center;
-        }
-        header h1 {
-            font-size: 3em;
-            font-weight: bold;
-            color: #f8f8f4;
-            text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
-            letter-spacing: 2px;
-            margin: 0;
-        }
-        nav {
-            margin: 20px 0;
-        }
-        nav a {
-            color: #ffffff;
-            margin: 0 15px;
-            text-decoration: none;
-        }
-        .container {
-            width: 80%;
-            margin: auto;
-            overflow: hidden;
-        }
-        section {
-            background: rgba(255, 255, 255, 0.9);
-            padding: 20px;
-            margin: 20px 0;
-            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
-            position: relative;
-        }
-        .tooltip {
-            display: none;
-            position: absolute;
-            background: #35424a;
-            color: #ffffff;
-            padding: 10px;
-            border-radius: 5px;
-            z-index: 10;
-            left: 320px;
-            top: 50%;
-            transform: translateY(-50%);
-            white-space: nowrap;
-        }
-        img {
-            transition: transform 0.4s linear, box-shadow 0.3s ease;
-            margin-right: 20px;
-        }
-        img:hover {
-            transform: scale(1.05);
-            box-shadow: 0 0 15px rgba(78, 78, 77, 0.7);
-        }
-        img:hover + .tooltip {
-            display: block;
-        }
-        .mostrar-mas {
-            display: inline-block;
-            padding: 10px 15px;
-            background-color: #35424a;
-            color: #ffffff;
-            border-radius: 5px;
-            text-decoration: none;
-            transition: transform 0.3s ease;
-        }
-        .mostrar-mas:hover {
-            transform: translateY(-3px);
-        }
-        footer {
-            text-align: center;
-            padding: 10px 0;
-            background: rgba(53, 66, 74, 0.8);
-            color: #ffffff;
-            position: relative;
-            bottom: 0;
-            width: 100%;
-        }
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>GENEROS MUSICALES – Escena Iqueña</title>
+  <meta name="description" content="Explora los géneros musicales de la escena iqueña: rock, funk, fusión y más.">
 
-        .qr-yape {
-  position: fixed;
-  bottom: 15px;
-  right: 15px;
-  text-align: center;
-  z-index: 1000;
-}
-
-.qr-yape img {
-  width: 100px;
-  height: auto;
-  cursor: pointer;
-  border-radius: 8px;
-  box-shadow: 0 0 10px rgba(0,0,0,0.4);
-}
-
-.qr-yape p {
+  <style>
+    body {
+  margin: 0;
+  font-family: Arial, sans-serif;
   color: white;
-  background: rgba(0,0,0,0.6);
-  padding: 5px 8px;
-  border-radius: 5px;
-  font-size: 0.8em;
-  margin-top: 5px;
+  text-align: center;
+
+  background: url('../imagenes/GENERO_IMAGEN.jpg') no-repeat center center fixed;
+  background-size: cover;   
+  background-attachment: fixed; 
 }
 
-@media screen and (max-width: 600px) {
-  .qr-yape img {
-    width: 70px;
-  }
-  .qr-yape p {
-    font-size: 0.7em;
-    padding: 4px;
-  }
-}
-html {
-      scroll-behavior: smooth;
+
+    header {
+      background: rgba(0, 0, 0, 0.7);
+      padding: 15px;
     }
 
-    </style>
+    nav a {
+      color: #c8bed7;
+      margin: 0 15px;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    nav a:hover {
+      text-decoration: underline;
+    }
+
+    main {
+      background: rgba(0, 0, 0, 0.6);
+      padding: 30px;
+      margin: 20px;
+      border-radius: 10px;
+    }
+
+   section {
+      background: rgba(255, 255, 255, 0.9); 
+      color: black;
+      padding: 20px;
+      margin: 20px auto;
+      border-radius: 12px;
+      border: 2px solid #ddd; 
+      max-width: 800px; 
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); 
+    }
+
+    h1, h2 {
+      color: #000000;
+      transition: transform 0.3s ease;
+    }
+
+    footer {
+      background: rgba(0, 0, 0, 0.7);
+      padding: 10px;
+      font-size: 14px;
+    }
+    .l1 {
+      color: #ffcc00;      
+      font-size: 50px;  
+      text-shadow: 2px 2px 5px black;
+      margin: 20px 0;
+    }
+    section:hover {
+      transform: scale(1.05);
+      box-shadow: 0 6px 15px rgba(0, 0, 0, 0.5);
+      transition-duration: 0.8s;
+    }
+  </style>
 </head>
 <body>
 
 <header>
-    <h1>EN MI MUSICA IQUEÑA</h1>
-    <nav>
-        <a href="generos/index.html">Generos</a> 
-        <a href="comunidades/index.html">Comunidades</a>
-        <a href="https://www.instagram.com/daniolazaval2212/">Organizador</a>
-        <div class="html">
-        <a href="#eventos">Eventos</a>
-        </div> 
-    </nav>
+    <h1 class="l1">🎶 Géneros Musicales 🎶</h1>
+  <nav role="navigation" aria-label="Menú principal">
+    <a href="../index.html">Inicio</a>
+    <a href="generos.html">Géneros</a>
+    <a href="../comunidades/index.html">Comunidades</a>
+    <a href="https://www.instagram.com/daniolazaval2212/" target="_blank">Organizador</a>
+    <a href="../index.html">Eventos</a>
+  </nav>
 </header>
 
-    <form action="resultados.html" method="get" style="text-align: center; margin-top: 20px;">
-  <input type="text" name="busqueda" placeholder="Buscar bandas, eventos..." style="padding: 10px; width: 250px; border-radius: 5px; border: 1px solid #ccc;">
-  <button type="submit" style="padding: 10px 15px; background-color: #35424a; color: white; border: none; border-radius: 5px;">Buscar</button>
-</form>
+<main>
+  <section>
+    <h2>Rock 🎸</h2>
+    <p>Bandas con mucha energía, pogos y un estilo que mezcla lo clásico con lo moderno.</p>
+  </section>
 
-<div class="container">
-    <section>
-        <h2>𝐏𝐑𝐎𝐘𝐄𝐂𝐓𝐎𝐒 𝐌𝐔𝐒𝐈𝐂𝐀𝐋𝐄𝐒 </h2>
-        <div style="display: flex; align-items: center; overflow-x: auto;">
-        <a href="https://www.instagram.com/dposoficial?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" target="_blank">
-        <img src="imagenes/IMAGEN-DPOS.jpg" alt="DPOS" style="max-width: 300px; height: 200px;" />
-        <div class="tooltip">DPOS es una banda del 2021 que empezó con el pie derecho.</div>
-        </a>
-        <a href="https://www.instagram.com/the_enygmas?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" target="_blank">
-        <img src="imagenes/IMAGEN-THEENYGMAS.jpg" alt="RASTRO" style="max-width: 300px; height: 200px;" />
-        </a>
-        <a href="https://www.instagram.com/shi_funk?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw=="target="blank">
-        <img src="imagenes/SHI-FUNK.jpg" alt="RASTRO" style="max-width: 300px; height: 200px;" />
-        </a>
+  <section>
+    <h2>Funk 🎶</h2>
+    <p>Ritmos bailables y juveniles que prenden a la gente en cada presentación.</p>
+  </section>
 
-    </div>
-    </section>
+  <section>
+    <h2>Fusión 🎼</h2>
+    <p>Combinaciones de rock con música clásica, jazz y sonidos peruanos únicos.</p>
+  </section>
 
-    <section>
-        <h2>𝐁𝐀𝐍𝐃𝐀𝐒 𝐄𝐌𝐄𝐑𝐆𝐄𝐍𝐓𝐄𝐒 🎸</h2>
-        <div style="display: flex; align-items: center; overflow-x: auto;">
-            <a href="https://www.instagram.com/shi_funk?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw=="target="blank">
-            <img src="imagenes/SHI-FUNK.jpg" alt="SHI-FUNK" style="max-width: 300px; height: 200px;" />
-            <div class="tooltip">Una banda juvenil Iqueña </div>
-            </a>
-            <a href="https://www.instagram.com/the_enygmas?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" target="_blank">
-            <img src="imagenes/IMAGEN-THEENYGMAS.jpg" alt="THEENYGMAS" style="max-width: 300px; height: 200px;" />
-            </a>
-            <a href="https://www.instagram.com/donna.angelicataa?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" target="_blank">
-            <img src="imagenes/DONNA-ANGELICATTA.jpg" alt="DONNA-ANGELICATTA" style="max-width: 300px; height: 200px;" />
-            </a>
-            
-            <a href="mostrarmas/index.html" class="mostrar-mas">Mostrar más 🎸</a>
-        </div>
-    </section>
-
-    <section id="eventos">
-        <h2>𝐄𝐕𝐄𝐍𝐓𝐎𝐒 🎹</h2>
-        <div style="display: flex; align-items: center; overflow-y: auto;">
-            <a href="eventos/index.html">
-                <img src="imagenes/ARTESANO-LOGO.jpg" alt="EVENTOS" style="max-width: 300px; height: 200px;" />
-            <a href="https://www.instagram.com/rockicalle?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" target="_blank">
-  <img src="imagenes/ROCK-CALLE.jpg" alt="ROCK CALLE" 
-       style="max-width: 290px; height: 200px; margin-left: 20px;" />
-</a>
-<section>
-        </div>
-<div class="qr-yape">
-  <img src="imagenes/QR-YAPE.jpg" alt="QR de Yape">
-  <p>Escanea para yapear 🙌</p>
-</div>
-
-
-        <p>DISFRUTA DE LOS MEJORES EVENTOS DE ICA QUE SE VIENEN.</p>
-            
-    </section>
-</div>
+  <section>
+    <h2>Otros Géneros 🎤</h2>
+    <p>Espacio para reggae, pop, metal, indie y mucho más.</p>
+  </section>
+</main>
 
 <footer>
-    <p>&copy; 2025 Mi MUSICA IQUEÑA. Todos los derechos reservados.</p>
+  <p>&copy; 2025 Mi Música Iqueña. Todos los derechos reservados.</p>
 </footer>
 
 </body>
 </html>
-
-
-
